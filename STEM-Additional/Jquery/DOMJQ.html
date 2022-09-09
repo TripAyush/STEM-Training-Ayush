@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          var pizzaName = $("#pname").val();
+          if (pizzaName == "") {
+            alert("Enter a pizza name");
+            return;
+          }
+          //   console.log(pizzaName);
+
+          var pizzaType = $("input[name='ptype']:checked").val();
+          if (pizzaType == undefined) {
+            alert("Please a select a pizza type");
+            return;
+          }
+          //   console.log(pizzaType);
+
+          var pizzaSize = $("#psize").val();
+
+          var moreCheese = "";
+          var extras = $("input[name='extra']:checked").val();
+          if (extras == undefined) moreCheese = "No Extra Cheese";
+          else moreCheese = "Needs Extra Cheese";
+
+          var qty = $("#qty").val();
+          if (qty == "") {
+            alert("Enter quantity");
+            return;
+          }
+          //   console.log(pizzaName, pizzaSize, pizzaType, moreCheese, qty);
+
+          $("#order").append(
+            "<tr><td>" +
+              pizzaName +
+              "</td><td>" +
+              pizzaType +
+              "</td><td>" +
+              pizzaSize +
+              "</td><td>" +
+              moreCheese +
+              "</td><td>" +
+              qty +
+              "</td></tr>"
+          );
+
+          $("#order tr").css({
+            "color": "red",
+            "text-decoration": "none",
+            "padding": "10px",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <table border="1">
+        <tr>
+          <td>Enter Pizza Name</td>
+          <td><input type="text" id="pname" /></td>
+        </tr>
+        <tr>
+          <td>Select Pizza Type</td>
+          <td>
+            <input type="radio" name="ptype" value="Veg" /> Veg
+            <input type="radio" name="ptype" value="NonVeg" /> NonVeg
+            <input type="radio" name="ptype" value="Starter" /> Starter
+          </td>
+        </tr>
+        <tr>
+          <td>Select Pizza size</td>
+          <td>
+            <select id="psize">
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Extra Cheese</label>
+          </td>
+          <td>
+            <input name="extra" type="checkbox" checked="checked" />
+          </td>
+        </tr>
+        <tr>
+          <td>Enter Qty.</td>
+          <td>
+            <input type="number" id="qty" />
+          </td>
+        </tr>
+        <tr>
+          <td><button id="b1" type="button">Place Order</button></td>
+        </tr>
+      </table>
+    </form>
+
+    <table id="order" border="2" style="margin-top: 15px">
+      <tr>
+        <th>Pizza Name</th>
+        <th>Pizza Type</th>
+        <th>Pizza Size</th>
+        <th>Extra Cheese?</th>
+        <th>Qty.</th>
+      </tr>
+    </table>
+  </body>
+</html>

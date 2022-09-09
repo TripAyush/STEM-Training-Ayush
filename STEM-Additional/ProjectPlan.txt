@@ -1,0 +1,132 @@
+-Creating Github Repo*
+-Verify the Workflow for everyone*
+
+1. Tables
+-User Table(Has both Admin and Employee)
+create table User(
+    UserID int constraint pk_userid primary key identity(1000,9999),
+    UserName varchar(30) not null,
+    Password varchar(30) not null,
+    UserRole varchar(20) not null,    
+)
+
+-Employee Table(Foreign Key?)
+create table Employee(
+    EmpID int constraint pk_empid primary key identity,
+    Empname varchar(30) not null,
+    Dept varchar(30) constraint chk_dept check (dept in('IT', 'ACCOUNTS', 'HR', 'ADMIN')),
+    EmailId varchar(30) constraint un_email unique,
+    MobNo bigint constraint un_mno unique,
+    Location varchar(30) constraint un_loc default 'HYDERABAD',
+    Desg varchar(30) constraint chk_desg check (desg in('ANALYST', 'MANAGER', 'ASST MANAGER', 'JR STAFF')),
+);
+
+-SalaryInfo Table(Foreign Key)
+create table SalaryInfo(
+    SalaryID int constraint pk_salid primary key identity,
+    EmpID int constraint fk_emp references Employee(EmpID),
+    Salary money not null,
+    Desg varchar(30) not null,
+    SalaryDate datetime constraint def_Sd default getdate(),
+);
+
+
+2. Stored Procedures
+--Adding User(Any User)
+create proc sp_InsertUser(@name varchar(30),@pass varchar(30),@role varchar(20),@uid int out)
+as
+begin
+insert into User values(@name,@pass,@role)
+select @uid=@@IDENTITY
+end
+
+--Login(Also keeps track of role)
+create proc sp_LoginUser(@uid int,@pass varchar(30),@role varchar(20))
+as
+begin
+select * from User where UserID=@uid and [Password]=@pass and UserRole=@role
+end
+
+-Admin
+--Adding Employee
+create procedure sp_InsertEmployee(@name varchar(30),@dept varchar(30),@email varchar(30),@mno bigint,@loc varchar(30),@desg varchar(30),@eid int out)
+as
+begin
+insert into Employee values(@name,@dept,@email,@mno,@loc,@desg)
+select @eid=@@IDENTITY
+end
+
+--Deleting Employee
+create procedure sp_DeleteEmployee(@eid int)
+as
+begin
+delete from Employee where EmpID=@eid
+end
+
+*No SP for this just extract the values from grid and show*
+--Viewing Employee Record(Extract a specific record from grid)
+
+--Salary Insert(Based on EmployeeID)
+create proc sp_GenerateSalary(@eid int)
+as 
+begin 
+declare @sal money
+declare @desg varchar(30)
+select @desg=Desg from emp where EmpID=@eid
+update SalaryInfo
+set Salary=
+case @desg
+when 'ANALYST' then 75000
+when 'ASST MANAGER' then 100000
+when 'MANAGER' then 150000
+when 'JR STAFF' then 50000
+end
+where EMPID=@eid
+end
+
+
+
+-Employee
+--Viewing Payslip(Show salary from table matching id) - Using Grid
+
+--Changing Password(Modifies password matching id)
+create proc sp_ChangePassword(@uid int,@pass varchar(30))
+as
+begin
+UPDATE User SET Password=@pass WHERE UserID=@uid
+end
+
+--Update Profile(Same as password) - HOW??
+create proc sp_UpdateProfile(@eid int,@name varchar(30),@email varchar(30),@mno bigint,@loc varchar(30))
+as
+begin
+UPDATE Employee SET Empname=@name,EmailId=@email,MobNo = @mno,Location=@loc WHERE EmpID=@eid
+end
+
+--Viewing Profile(Show details from table matching id) - Using Grid
+
+
+3. UI
+-Login Page
+-Register Page
+-Master Page Admin(Separate pages within for functions)
+-Master Page Employee(Separate pages within for functions)
+
+
+4. DataAccessLayer
+-Calling Stored Procedures for each functionality(DBMethods)
+
+5. Models
+-UserModel
+-EmployeeModel
+-SalaryModel
+
+6. Btn Methods
+-Calling DB methods after extracting values from UI
+
+
+CHALLENGES??
+-Login Based on Role
+-Showing records based on ID
+
+

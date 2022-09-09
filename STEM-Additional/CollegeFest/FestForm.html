@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="qfc-dark.css" />
+    <!-- <link rel="stylesheet" href="qfc-light.css"> -->
+  </head>
+  <body>
+    <div class="qfc-container">
+      <a href="./Home.html"><button class="btn btn-primary">Home</button></a>
+      <h2>Fest Registration</h2>
+      <label>Register to take part in the Tech fest</label>
+      <form>
+        <div>
+          <div>
+            <input placeholder="Full Name" type="text" required />
+          </div>
+          <div>
+            <input placeholder="Phone Number" type="tel" required />
+          </div>
+          <div>
+            <input placeholder="Email Address" type="email" required />
+          </div>
+          <div>
+            <label>Branch</label>
+            <div>
+              <label>
+                <input type="radio" name="set_1" checked="checked" />CSE
+              </label>
+            </div>
+            <div>
+              <label> <input type="radio" name="set_1" />IT </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="set_1" checked="checked" />ECE
+              </label>
+            </div>
+          </div>
+          <div>
+            <label>Your Semester</label>
+            <select id>
+              <option disabled selected value="--">Select Your Semester</option>
+              <option value="1">1st</option>
+              <option value="2">2nd</option>
+              <option value="3">3rd</option>
+              <option value="4">4th</option>
+              <option value="5">5th</option>
+              <option value="6">6th</option>
+              <option value="7">7th</option>
+              <option value="8">8th</option>
+            </select>
+          </div>
+
+          <div>
+            <div>
+              <div>
+                <input type="checkbox" checked="checked" />
+                <label>Are you performing?</label>
+              </div>
+            </div>
+            <label>Message (About Performance)</label>
+            <div>
+              <textarea placeholder="Eg. Enter your messages here"></textarea>
+            </div>
+          </div>
+          <div>
+            <label>Attach College ID</label>
+            <div>
+              <input type="file" id />
+            </div>
+          </div>
+          <div>
+            <button type="submit">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <style>
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+  </style>
+</html>

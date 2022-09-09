@@ -1,0 +1,81 @@
+<!-- https://api.jquery.com/category/selectors/ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JQuery</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border: dotted 7px green;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <table border="2">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Mickey</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Donald</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Goofey</td>
+          <td>16</td>
+        </tr>
+      </table>
+    </div> -->
+    <div id="d1"></div>
+    <hr />
+    <div></div>
+    <hr />
+    <div></div>
+    <hr />
+    <button id="'b1">Show</button>
+    <button id="'b2">Hide</button>
+    <button id="'b3">Toggle</button>
+    <button id="'b4">Fade in</button>
+    <button id="'b5">Fade Out</button>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // $("tr:even").css("backgroundColor", "red");
+        // $("tr:odd").css("backgroundColor", "green");
+        $("#b1").click(function () {
+          $("div").show();
+        });
+
+        $("#b2").click(function () {
+          $("div").hide();
+        });
+
+        $("#b3").click(function () {
+          $("div").toggle(2000);
+        });
+        $("#b4").click(function () {
+          $("#d1").fadeIn(5000);
+        });
+        $("#b5").click(function () {
+          $("#d1").fadeOut();
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="container">
+      <form class="was-validated">
+        <table
+          class="table table-success table-hover table-striped table-bordered"
+        >
+          <tr class="form-group">
+            <td>Enter Name</td>
+            <td>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                required
+                class="form-control form-control-sm"
+              />
+            </td>
+            <td class="invalid-feedback">Name cannot be blank</td>
+          </tr>
+          <tr class="form-group">
+            <td>Enter Address</td>
+            <td>
+              <textarea
+                placeholder="Enter your address"
+                required
+                class="form-control form-control-sm"
+              ></textarea>
+            </td>
+            <td class="invalid-feedback">Address cannot be blank</td>
+          </tr>
+          <tr class="form-group">
+            <td>Select Gender</td>
+            <td>
+              <input
+                type="radio"
+                required
+                class="form-check-input mr-4"
+                name="gender"
+                value="Male"
+              />&nbsp Male
+              <!-- <p class="mr-4">Male</p> -->
+              <input
+                type="radio"
+                required
+                class="form-check-input mr-4"
+                name="gender"
+                value="Female"
+              />&nbsp Female
+              <input
+              type="radio"
+              required
+              class="form-check-input mr-4"
+              name="gender"
+              value="Female"
+            />&nbsp Other
+            </td>
+            <td class="invalid-feedback">Gender has to be selected</td>
+          </tr>
+          <tr class="form-group">
+            <td>Select City</td>
+            <td>
+              <select class="form-control form-control-sm" required>
+                <option value="">Select</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+              </select>
+            </td>
+            <td class="invalid-feedback">Please select a city</td>
+          </tr>
+
+          <tr class="form-group">
+            <td>Select Passion</td>
+            <td>
+              <select class="form-control form-control-sm" multiple required>
+                <option value="Reading">Reading</option>
+                <option value="Music">Music</option>
+                <option value="Trekking">Trekking</option>
+                <option value="Vlogging">Vlogging</option>
+                <option value="Sports">Sports</option>
+              </select>
+            </td>
+            <td class="invalid-feedback">Please select at least 1 passion</td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit" class="btn btn-primary">Register</button>
+            </td>
+            <td><button type="reset" class="btn btn-danger">Cancel</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

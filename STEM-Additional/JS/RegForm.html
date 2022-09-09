@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Registration Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script>
+      function validateForm() {
+        //Validate Name
+        var name = document.getElementById("txtname").value;
+        if (name == "") {
+          alert("Name cannot be empty");
+          return;
+        }
+
+        //Validate Password
+        var pwd = document.getElementById("txtpass").value;
+        if (pwd == "") {
+          alert("Password must not be empty");
+          return;
+        }
+        if (pwd.length < 4) {
+          alert("Password too short");
+          return;
+        }
+
+        //Validate Address
+        var add = document.getElementById("txtadd").value;
+        if (add == "") {
+          alert("Address cannot be empty");
+          return;
+        }
+
+        //Validate Gender
+        var gen = document.getElementsByName("gender");
+        alert("Gender:" + gen.length);
+        var g = "";
+        for (var i = 0; i < gen.length; i++) {
+          if (gen[i].checked) g = gen[i].value;
+        }
+        if (g == "") {
+          alert("No gender selected");
+          return;
+        }
+
+        //Validate Qualification
+        var quali = document.getElementsByName("q");
+        alert("Qualification:" + quali.length);
+        var q = "";
+        for (var i = 0; i < quali.length; i++) {
+          if (quali[i].checked) q += quali[i].value + ",";
+        }
+        if (q == "") {
+          alert("No qualification selected");
+          return;
+        }
+
+        //Validate Nation
+        var nation = document.getElementById("ddl").value;
+        if (nation == "") {
+          alert("Select a country");
+          return;
+        }
+
+        //Validate Skills
+        var skills = document.getElementById("skills");
+        alert("Skills: " + skills.length);
+        var sk = "";
+        for (var i = 0; i < skills.length; i++) {
+          if (skills[i].selected) sk += skills[i].value + ",";
+        }
+        if (sk == "") {
+          alert("Select any one skill");
+          return;
+        }
+
+        //Store all form data in local storage
+        localStorage.setItem("NAME", name);
+        localStorage.setItem("PASS", pwd);
+        localStorage.setItem("ADDR", addr);
+        localStorage.setItem("GENDER", g);
+        localStorage.setItem("QUALI", q);
+        localStorage.setItem("NATION", nation);
+        localStorage.setItem("SKILLS", sk);
+        alert("Data saved to local storage");
+
+        //Store all form data in session storage
+        sessionStorage.setItem("NAME", name);
+        sessionStorage.setItem("PASS", pwd);
+        sessionStorage.setItem("ADDR", addr);
+        sessionStorage.setItem("GENDER", g);
+        sessionStorage.setItem("QUALI", q);
+        sessionStorage.setItem("NATION", nation);
+        sessionStorage.setItem("SKILLS", sk);
+        alert("Data saved to session storage");
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Registration Form</legend>
+
+        <table border="1">
+          <tr>
+            <td>Enter Name</td>
+            <td><input type="text" id="txtname" required /></td>
+          </tr>
+          <tr>
+            <td>Enter Password</td>
+            <td><input type="password" id="txtpass" required /></td>
+          </tr>
+          <tr>
+            <td>Enter Address</td>
+            <td><textarea id="txtadd" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Select Gender</td>
+            <td>
+              <input type="radio" name="gender" value="Male" />Male
+              <input type="radio" name="gender" value="Female" />Female
+            </td>
+          </tr>
+          <tr>
+            <td>Enter Qualification</td>
+            <td>
+              <input type="checkbox" name="q" value="BE" />BE
+              <input type="checkbox" name="q" value="ME" />ME
+              <input type="checkbox" name="q" value="MBA" />MBA
+              <input type="checkbox" name="q" value="MCA" />MCA
+            </td>
+          </tr>
+          <tr>
+            <td>Select Nationality</td>
+            <td>
+              <select id="ddl">
+                <option value="">Select</option>
+                <option value="IN">India</option>
+                <option value="US">USA</option>
+                <option value="UK">UK</option>
+                <option value="JPN">Japan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Select Skills</td>
+            <td>
+              <select id="skills" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Jquery">Jquery</option>
+                <option value="Angular">Angular</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" onclick="validateForm()" /></td>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

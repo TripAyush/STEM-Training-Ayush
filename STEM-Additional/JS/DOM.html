@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script>
+      function Add() {
+        var element = document.getElementById("new");
+        var newEle = document.createElement("p");
+        var addText = document.createTextNode("This is a paragraph tag");
+        newEle.appendChild(addText);
+        element.appendChild(newEle);
+
+        var lbl = document.createElement("label");
+        lbl.innerText = "Enter Name";
+        element.appendChild(lbl);
+        var tb = document.createElement("input");
+        tb.setAttribute("type", "text");
+        tb.setAttribute("id", "txtname");
+        element.appendChild(tb);
+
+        var btn = document.createElement("button");
+        btn.setAttribute("onclick", "Show()");
+        btn.innerHTML = "Show Name";
+        element.appendChild(btn);
+      }
+
+      function Show() {
+        var data = document.getElementById("txtname").value;
+        alert("Name: " + data);
+      }
+
+      function Remove() {
+        document.getElementById("rem").remove();
+      }
+
+      function Apply() {
+        var ele = document.getElementById("d1");
+        ele.style.backgroundColor = "Green";
+        ele.style.color = "Yellow";
+        ele.style.width = "200px";
+        ele.style.height = "200px";
+        ele.style.border = "double 5px green";
+        ele.style.borderRadius = "10px";
+        ele.style.textAlign = "Center";
+        ele.style.margin = "20px";
+        ele.innerText = "";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="new"></div>
+    <h1 id="rem">Delete this</h1>
+    <hr />
+    <button onclick="Add()">Add new element</button>
+    <button onclick="Remove()">Remove an element</button>
+    <div id="d1">Apply Style</div>
+    <button onclick="Apply()">Style</button>
+  </body>
+</html>

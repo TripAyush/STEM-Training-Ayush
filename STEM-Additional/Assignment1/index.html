@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Calculator</title>
+    <!-- link for font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Assignment</title>
+      </head>
+      <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+      </body>
+    </html>
+  </head>
+  <body>
+    <div class="container w-50 mt-4 border border-2 border-primary">
+      <form class="row g-3 was-validated mt-2 needs-validation">
+        <div class="container w-75">
+          <h2 class="h2 display-6 text-center border border-1 border-primary rounded-3">
+            Student Grade Calculator
+          </h2>
+        </div>
+        <fieldset>
+          <div class="w-75 mx-5 text-center">
+            <div class="mb-3">
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                id="phy"
+                class="form-control"
+                placeholder="Marketing"
+                max="100"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                id="chemistry"
+                class="form-control"
+                placeholder="Accouting"
+                max="100"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                max="100"
+                id="maths"
+                class="form-control"
+                placeholder="Computing"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                id="biology"
+                class="form-control"
+                max="100"
+                placeholder="Auditing"
+                required
+              />
+            </div>
+            <div class="mt-3">
+              <input
+                type="number"
+                id="showTotal"
+                class="form-control"
+                placeholder="Total"
+                readonly
+              />
+            </div>
+
+            <div class="mt-3">
+              <input
+                type="number"
+                id="showAvg"
+                class="form-control"
+                placeholder="Average"
+                readonly
+              />
+            </div>
+
+            <div class="mt-3">
+              <input
+                type="text"
+                id="showGrade"
+                class="form-control"
+                placeholder="Grade"
+                readonly
+              />
+            </div>
+
+            <div class="btn-group d-flex justify-content-between">
+              <div class="col-6">
+                <button
+                  class="btn btn-primary my-3"
+                  type="button"
+                  onclick="calculate()"
+                >
+                  Calculate Marks
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  class="btn btn-danger my-3"
+                  type="button"
+                  onclick="setEmpty()"
+                >
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

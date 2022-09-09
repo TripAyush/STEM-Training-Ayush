@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Events</title>
+  </head>
+  <body style="background-color: lightpink">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./Home.html">College Fest</a>
+          <img
+            src="https://cdn.dribbble.com/users/230124/screenshots/6493088/car.png?compress=1&resize=400x300"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top mr-2"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="./Home.html">Home</a>
+              <a class="nav-link" href="./Events.html">Events</a>
+              <a class="nav-link" href="./FestForm.html">Registration</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container w-50">
+      <h1 class="h1 display-2 text-center border border-2 mt-2">Fest Events</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mt-5">
+          <div class="card" style="width: 14rem">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Techfest</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="./FestForm.html" class="btn btn-primary"
+                >Click to Register</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-5">
+          <div class="card" style="width: 14rem">
+            <img
+              src="https://assets.thehansindia.com/h-upload/feeds/2019/04/25/168075-stand-up-comedy-show.jpg?width=500&height=300"
+              class="card-img-top mb-1"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Standup Comedy Show</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title
+              </p>
+              <a href="./FestForm.html" class="btn btn-primary">Get Tickets</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-5">
+          <div class="card" style="width: 14rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3SsQc-c8SSdo4MDUOWxkyZMCkEC9Ln-rx4Uw2EQPs&s"
+              class="card-img-top mb-1"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Treasure Hunt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk.
+              </p>
+              <a href="./FestForm.html" class="btn btn-primary"
+                >Participate Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-5">
+          <div class="card" style="width: 14rem">
+            <img
+              src="https://media.istockphoto.com/vectors/retro-light-text-quiz-time-retro-light-bulb-vector-stock-illustration-vector-id1272478640?k=20&m=1272478640&s=612x612&w=0&h=F6aSlPVEIKqIBB5X8Xw9MHvjoACZuk-sdtKoVPLtgXI="
+              class="card-img-top mb-3"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Quiz Trivia</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title
+              </p>
+              <a href="#" class="btn btn-primary">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

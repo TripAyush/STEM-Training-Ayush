@@ -1,0 +1,59 @@
+Project Overview
+PPT Presentation
+Project Viva
+Interview
+
+
+
+Difference between Rank, Dense_Rank and RowNumber
+Difference between Connected and Disconnected architecture
+Difference between Dataset , Datatable
+What is DataBinding
+Different types of Storages
+Difference between CSs and BootStrap
+Difference between Container and Container-fluid in Bootstrap
+Difference between Installing Bootstrap and CDN version of Bootstrap
+Difference between Min.css and .css
+Difference between Java Script and typescript
+What is Transpiler in Type Script
+What difference between Traditional Web Application/ Progressive Web Application and Single Page Application
+Architecture of Angular project 
+Difference between Template Driven Form and Reactive Forms
+What modules to be imported in app.module.ts to work on both types of Forms
+What are the 4 files created for every angular component
+What is import and export decoratives in angular
+What is Service in Angular
+Services -> HttpClient
+Observables and Subscribe
+Semantic tags and Non Semantic tags
+Different ways of creating CSS
+Why calling stored proc is preferred than calling direct Queries
+Difference between method overloading and method overriding
+Difference between constructor and methods
+Difference between constructor and properties
+What are the different types of constructors
+When do we use abstract class and interface
+what is difference between methods and properties
+what are access specifiers
+what is name space
+what is CLR,CTS, CLS , CIL
+What are the components of CLR
+Diffent types of queries
+DDL
+DML
+DQL
+TCL
+DCL
+difference between primary key and unique
+difference between NUll, Not Null
+among the different constraints which can contain null values
+difference between delete , drop and truncate
+different types of Joins
+Difference between View and CTE
+different types of index
+Difference between stored proc and trigger and functions
+
+
+
+
+
