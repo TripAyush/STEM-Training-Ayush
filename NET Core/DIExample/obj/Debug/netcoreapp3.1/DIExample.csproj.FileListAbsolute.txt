@@ -1,0 +1,14 @@
+C:\STEM Training\NET Core\DIExample\bin\Debug\netcoreapp3.1\DIExample.exe
+C:\STEM Training\NET Core\DIExample\bin\Debug\netcoreapp3.1\DIExample.deps.json
+C:\STEM Training\NET Core\DIExample\bin\Debug\netcoreapp3.1\DIExample.runtimeconfig.json
+C:\STEM Training\NET Core\DIExample\bin\Debug\netcoreapp3.1\DIExample.runtimeconfig.dev.json
+C:\STEM Training\NET Core\DIExample\bin\Debug\netcoreapp3.1\DIExample.dll
+C:\STEM Training\NET Core\DIExample\bin\Debug\netcoreapp3.1\DIExample.pdb
+C:\STEM Training\NET Core\DIExample\obj\Debug\netcoreapp3.1\DIExample.csproj.AssemblyReference.cache
+C:\STEM Training\NET Core\DIExample\obj\Debug\netcoreapp3.1\DIExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\STEM Training\NET Core\DIExample\obj\Debug\netcoreapp3.1\DIExample.AssemblyInfoInputs.cache
+C:\STEM Training\NET Core\DIExample\obj\Debug\netcoreapp3.1\DIExample.AssemblyInfo.cs
+C:\STEM Training\NET Core\DIExample\obj\Debug\netcoreapp3.1\DIExample.csproj.CoreCompileInputs.cache
+C:\STEM Training\NET Core\DIExample\obj\Debug\netcoreapp3.1\DIExample.dll
+C:\STEM Training\NET Core\DIExample\obj\Debug\netcoreapp3.1\DIExample.pdb
+C:\STEM Training\NET Core\DIExample\obj\Debug\netcoreapp3.1\DIExample.genruntimeconfig.cache

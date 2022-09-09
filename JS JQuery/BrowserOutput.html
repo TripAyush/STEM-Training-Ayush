@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <script>
+      var cities = [];
+      alert("Enter 5 city names");
+      for (var i = 5; i > 0; i--) {
+        var city = prompt("Enter " + (i + 1) + " city names");
+        cities.push(city);
+      }
+      document.write("City names are:" + cities);
+      document.write("<br>");
+      var d = new Date();
+      document.write("Current Date/Time : " + d);
+      document.write("<br>");
+      document.write(
+        "Month: " +
+          d.getMonth() +
+          "year: " +
+          d.getFullYear() +
+          "Day:" +
+          d.getDay()
+      );
+    </script>
+  </body>
+</html>

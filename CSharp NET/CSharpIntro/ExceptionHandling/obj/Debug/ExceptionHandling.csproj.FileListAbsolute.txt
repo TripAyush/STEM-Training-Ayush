@@ -1,0 +1,7 @@
+C:\STEM Training\CSharp NET\CSharpIntro\ExceptionHandling\bin\Debug\ExceptionHandling.exe.config
+C:\STEM Training\CSharp NET\CSharpIntro\ExceptionHandling\bin\Debug\ExceptionHandling.exe
+C:\STEM Training\CSharp NET\CSharpIntro\ExceptionHandling\bin\Debug\ExceptionHandling.pdb
+C:\STEM Training\CSharp NET\CSharpIntro\ExceptionHandling\obj\Debug\ExceptionHandling.csproj.AssemblyReference.cache
+C:\STEM Training\CSharp NET\CSharpIntro\ExceptionHandling\obj\Debug\ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\STEM Training\CSharp NET\CSharpIntro\ExceptionHandling\obj\Debug\ExceptionHandling.exe
+C:\STEM Training\CSharp NET\CSharpIntro\ExceptionHandling\obj\Debug\ExceptionHandling.pdb

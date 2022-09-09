@@ -1,0 +1,123 @@
+<div class="container">
+  <h1 class="h1">Template Registration Form</h1>
+  <form class="was-validated" #regform="ngForm" (ngSubmit)="Register(regform)">
+    <table class="table table-primary table-hover table-striped table-bordered">
+      <tr class="form-group">
+        <td>Enter Name</td>
+        <td>
+          <input
+            type="text"
+            id="uname"
+            name="uname"
+            #uname="ngModel"
+            [(ngModel)]="model.uname"
+            placeholder="Enter your name"
+            required
+            class="form-control form-control-sm"
+          />
+        </td>
+        <td class="invalid-feedback">Name cannot be blank</td>
+      </tr>
+      <tr class="form-group">
+        <td>Enter Address</td>
+        <td>
+          <textarea
+            id="addr"
+            name="addr"
+            #addr="ngModel"
+            [(ngModel)]="model.addr"
+            placeholder="Enter your address"
+            required
+            class="form-control form-control-sm"
+          ></textarea>
+        </td>
+        <td class="invalid-feedback">Address cannot be blank</td>
+      </tr>
+      <tr class="form-group">
+        <td>Select Gender</td>
+        <td>
+          <input
+            id="gender"
+            name="gender"
+            #gender="ngModel"
+            [(ngModel)]="model.gender"
+            type="radio"
+            required
+            class="form-check-input mr-4"
+            value="Male"
+          />&nbsp; Male
+          <input
+            id="gender"
+            name="gender"
+            #gender="ngModel"
+            [(ngModel)]="model.gender"
+            type="radio"
+            required
+            class="form-check-input mr-4"
+            value="Female"
+          />&nbsp; Female
+          <input
+            id="gender"
+            name="gender"
+            #gender="ngModel"
+            [(ngModel)]="model.gender"
+            type="radio"
+            required
+            class="form-check-input mr-4"
+            value="Female"
+          />&nbsp; Other
+        </td>
+        <td class="invalid-feedback">Gender has to be selected</td>
+      </tr>
+      <tr class="form-group">
+        <td>Select City</td>
+        <td>
+          <select
+            id="city"
+            name="city"
+            #city="ngModel"
+            [(ngModel)]="model.city"
+            class="form-control form-control-sm"
+            required
+          >
+            <option value="">Select</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+          </select>
+        </td>
+        <td class="invalid-feedback">Please select a city</td>
+      </tr>
+
+      <tr class="form-group">
+        <td>Select Passion</td>
+        <td>
+          <select
+            id="passion"
+            name="passion"
+            #passion="ngModel"
+            [(ngModel)]="model.passion"
+            class="form-control form-control-sm"
+            multiple
+            required
+          >
+            <option value="Reading">Reading</option>
+            <option value="Music">Music</option>
+            <option value="Trekking">Trekking</option>
+            <option value="Vlogging">Vlogging</option>
+            <option value="Sports">Sports</option>
+          </select>
+        </td>
+        <td class="invalid-feedback">Please select at least 1 passion</td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit" [disabled]="regform.invalid" class="btn btn-primary">Register</button>
+        </td>
+        <td><button type="reset" class="btn btn-danger">Cancel</button></td>
+      </tr>
+    </table>
+  </form>
+</div>

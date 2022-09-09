@@ -1,0 +1,45 @@
+﻿@page
+@model FirstWebExample.Pages.BookShopModel
+@{
+    <h2>Book Form</h2>
+
+    <form method="post">
+        @Html.ValidationSummary(true)
+        <table border="1" style="text-align:center">
+            <tr>
+                <td>Enter Book Title</td>
+                <td><input type="text" name="bname" required /></td>
+            </tr>
+            <tr>
+                <td>Enter Author Name</td>
+                <td><input type="text" name="bauth" required /></td>
+            </tr>
+            <tr>
+                <td>Select Category</td>
+                <td>
+                    <select name="bcat">
+                        <option value="Technical">Technical</option>
+                        <option value="Novel">Novel</option>
+                        <option value="Comics">Comics</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Magazine">Magazine</option>
+                        <option value="Horror">Horror</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Number of Pages</td>
+                <td><input type="number" name="bpages" required /></td>
+            </tr>
+            <tr>
+                <td>Enter Book Price</td>
+                <td><input type="number" name="bprice" required /></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Add Book</button></td>
+                <td><input type="reset" value="Cancel" /></td>
+            </tr>
+        </table>
+    </form>
+}

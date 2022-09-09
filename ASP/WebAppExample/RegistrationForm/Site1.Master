@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="RegistrationForm.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border: 3px solid #990000;
+        }
+        .auto-style4 {
+            height: 92px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="background-color:coral;height:200px;width:auto;">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style4">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/flower1" />
+                        <asp:Image ID="Image2" runat="server" Height="91px" ImageUrl="~/Images/OIP.jpg" Width="275px" />
+                    </td>
+                    <td class="auto-style4">
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Product.aspx">Product</asp:HyperLink>
+                    </td>
+                    <td class="auto-style4">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="background-color:lightblue;height:auto;width:auto;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

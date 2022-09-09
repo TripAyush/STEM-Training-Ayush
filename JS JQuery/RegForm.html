@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JAVASCRIPT</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Registration Form</legend>
+
+        <table border="1">
+          <tr>
+            <td>Enter Name</td>
+            <td><input type="text" id="txtname" required /></td>
+          </tr>
+          <tr>
+            <td>Enter Password</td>
+            <td><input type="password" id="txtpass" required /></td>
+          </tr>
+          <tr>
+            <td>Enter Address</td>
+            <td><textarea id="txtadd" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Select Gender</td>
+            <td>
+              <input type="radio" name="gender" value="Male" />Male
+              <input type="radio" name="gender" value="Female" />Female
+            </td>
+          </tr>
+          <tr>
+            <td>Enter Qualification</td>
+            <td>
+              <input type="checkbox" name="q" value="BE" />BE
+              <input type="checkbox" name="q" value="ME" />ME
+              <input type="checkbox" name="q" value="MBA" />MBA
+              <input type="checkbox" name="q" value="MCA" />MCA
+            </td>
+          </tr>
+          <tr>
+            <td>Select Nationality</td>
+            <td>
+              <select id="ddl">
+                <option value="">Select</option>
+                <option value="IN">India</option>
+                <option value="US">USA</option>
+                <option value="UK">UK</option>
+                <option value="JPN">Japan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Select Skills</td>
+            <td>
+              <select id="skills" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Jquery">Jquery</option>
+                <option value="Angular">Angular</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" /></td>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <script src="external.js" async defer></script>
+  </body>
+</html>

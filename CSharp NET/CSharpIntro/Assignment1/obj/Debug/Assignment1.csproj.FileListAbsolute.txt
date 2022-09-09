@@ -1,0 +1,7 @@
+C:\STEM Training\CSharp NET\CSharpIntro\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+C:\STEM Training\CSharp NET\CSharpIntro\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+C:\STEM Training\CSharp NET\CSharpIntro\Assignment1\bin\Debug\Assignment1.exe.config
+C:\STEM Training\CSharp NET\CSharpIntro\Assignment1\bin\Debug\Assignment1.exe
+C:\STEM Training\CSharp NET\CSharpIntro\Assignment1\bin\Debug\Assignment1.pdb
+C:\STEM Training\CSharp NET\CSharpIntro\Assignment1\obj\Debug\Assignment1.exe
+C:\STEM Training\CSharp NET\CSharpIntro\Assignment1\obj\Debug\Assignment1.pdb

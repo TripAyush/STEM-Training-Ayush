@@ -1,0 +1,7 @@
+C:\STEM Training\CSharp NET\CSharpIntro\CollectionExample\bin\Debug\CollectionExample.exe.config
+C:\STEM Training\CSharp NET\CSharpIntro\CollectionExample\bin\Debug\CollectionExample.exe
+C:\STEM Training\CSharp NET\CSharpIntro\CollectionExample\bin\Debug\CollectionExample.pdb
+C:\STEM Training\CSharp NET\CSharpIntro\CollectionExample\obj\Debug\CollectionExample.csproj.AssemblyReference.cache
+C:\STEM Training\CSharp NET\CSharpIntro\CollectionExample\obj\Debug\CollectionExample.csproj.CoreCompileInputs.cache
+C:\STEM Training\CSharp NET\CSharpIntro\CollectionExample\obj\Debug\CollectionExample.exe
+C:\STEM Training\CSharp NET\CSharpIntro\CollectionExample\obj\Debug\CollectionExample.pdb

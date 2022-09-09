@@ -1,0 +1,14 @@
+C:\STEM Training\NET Core\FirstExample\bin\Debug\netcoreapp3.1\FirstExample.exe
+C:\STEM Training\NET Core\FirstExample\bin\Debug\netcoreapp3.1\FirstExample.deps.json
+C:\STEM Training\NET Core\FirstExample\bin\Debug\netcoreapp3.1\FirstExample.runtimeconfig.json
+C:\STEM Training\NET Core\FirstExample\bin\Debug\netcoreapp3.1\FirstExample.runtimeconfig.dev.json
+C:\STEM Training\NET Core\FirstExample\bin\Debug\netcoreapp3.1\FirstExample.dll
+C:\STEM Training\NET Core\FirstExample\bin\Debug\netcoreapp3.1\FirstExample.pdb
+C:\STEM Training\NET Core\FirstExample\obj\Debug\netcoreapp3.1\FirstExample.csproj.AssemblyReference.cache
+C:\STEM Training\NET Core\FirstExample\obj\Debug\netcoreapp3.1\FirstExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\STEM Training\NET Core\FirstExample\obj\Debug\netcoreapp3.1\FirstExample.AssemblyInfoInputs.cache
+C:\STEM Training\NET Core\FirstExample\obj\Debug\netcoreapp3.1\FirstExample.AssemblyInfo.cs
+C:\STEM Training\NET Core\FirstExample\obj\Debug\netcoreapp3.1\FirstExample.csproj.CoreCompileInputs.cache
+C:\STEM Training\NET Core\FirstExample\obj\Debug\netcoreapp3.1\FirstExample.dll
+C:\STEM Training\NET Core\FirstExample\obj\Debug\netcoreapp3.1\FirstExample.pdb
+C:\STEM Training\NET Core\FirstExample\obj\Debug\netcoreapp3.1\FirstExample.genruntimeconfig.cache

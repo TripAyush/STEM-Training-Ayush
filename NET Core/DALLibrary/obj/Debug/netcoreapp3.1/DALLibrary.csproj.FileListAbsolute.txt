@@ -1,0 +1,10 @@
+C:\STEM Training\NET Core\DALLibrary\bin\Debug\netcoreapp3.1\DALLibrary.deps.json
+C:\STEM Training\NET Core\DALLibrary\bin\Debug\netcoreapp3.1\DALLibrary.dll
+C:\STEM Training\NET Core\DALLibrary\bin\Debug\netcoreapp3.1\DALLibrary.pdb
+C:\STEM Training\NET Core\DALLibrary\obj\Debug\netcoreapp3.1\DALLibrary.csproj.AssemblyReference.cache
+C:\STEM Training\NET Core\DALLibrary\obj\Debug\netcoreapp3.1\DALLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\STEM Training\NET Core\DALLibrary\obj\Debug\netcoreapp3.1\DALLibrary.AssemblyInfoInputs.cache
+C:\STEM Training\NET Core\DALLibrary\obj\Debug\netcoreapp3.1\DALLibrary.AssemblyInfo.cs
+C:\STEM Training\NET Core\DALLibrary\obj\Debug\netcoreapp3.1\DALLibrary.csproj.CoreCompileInputs.cache
+C:\STEM Training\NET Core\DALLibrary\obj\Debug\netcoreapp3.1\DALLibrary.dll
+C:\STEM Training\NET Core\DALLibrary\obj\Debug\netcoreapp3.1\DALLibrary.pdb

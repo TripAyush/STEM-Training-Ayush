@@ -1,0 +1,18 @@
+﻿@page
+@model FirstWebExample.Pages.CitiesModel
+@{
+    List<string> cities = new List<string>();
+    cities.Add("Delhi");
+    cities.Add("Bangalore");
+    cities.Add("Hyderabad");
+    cities.Add("Mumbai");
+    cities.Add("Pune");
+    cities.Add("Chandigarh");
+}
+<hr />
+<ul>
+    @foreach(var c in cities)
+            {
+                <li>@c</li>
+            }
+</ul>

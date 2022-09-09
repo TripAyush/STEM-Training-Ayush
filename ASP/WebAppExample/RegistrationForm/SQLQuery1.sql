@@ -1,0 +1,1 @@
+create table PizzaForm(CustomerName varchar(30) not null,PhoneNumber varchar(10) primary key,Amount int);

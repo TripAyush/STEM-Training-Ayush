@@ -1,0 +1,37 @@
+﻿@page
+@model FirstWebExample.Pages.CustomerModel
+@{
+    <h1>Customer Form</h1>
+
+    <form method="post">
+    @Html.ValidationSummary(true)
+    <table border="1" style="text-align:center">
+        <tr>
+            <td>Enter Customer Name</td>
+            <td><input type="text" name="cname" required /></td>
+        </tr>
+        <tr>
+            <td>Enter Customer Address</td>
+            <td><textarea name="cadd"></textarea></td>
+        </tr>
+        <tr>
+            <td>Enter Mobile Number</td>
+            <td><input type="number" name="cmob" pattern="[0-9]{10}" required /></td>
+        </tr>
+        <tr>
+            <td>Enter Email Id</td>
+            <td><input type="email" name="cemail" required /></td>
+        </tr>
+        <tr>
+            <td>Select Gender</td>
+            <td><input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+            <input type="radio" name="gender" value="Other" />Other</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="New Customer" /></td>
+            <td><input type="reset" value="Cancel" /></td>
+        </tr>
+    </table>
+</form>
+}

@@ -1,0 +1,43 @@
+<div class="container">
+  <h1 class="h1">Login Form</h1>
+  <form class="was-validated" #loginform="ngForm" (ngSubmit)="Login(loginform)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        id="uemail"
+        name="uemail"
+        #uemail="ngModel"
+        [(ngModel)]="model.uemail"
+        type="email"
+        class="form-control"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+        required
+      />
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your email with anyone else.</small
+      >
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input
+        id="upass"
+        name="upass"
+        #upass="ngModel"
+        [(ngModel)]="model.upass"
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        required
+      />
+    </div>
+
+    <button
+      type="submit"
+      [disabled]="loginform.invalid"
+      class="btn btn-primary mt-2 mb-2"
+    >
+      Submit
+    </button>
+  </form>
+</div>

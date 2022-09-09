@@ -1,0 +1,105 @@
+<div class="container">
+  <h1 class="h1">Reactive Registration Form</h1>
+  <form class="was-validated" [formGroup]="regform" (ngSubmit)="Register()">
+    <table class="table table-success table-hover table-striped table-bordered">
+      <tr class="form-group">
+        <td>Enter Name</td>
+        <td>
+          <input
+            formControlName="uname"
+            type="text"
+            placeholder="Enter your name"
+            required
+            class="form-control form-control-sm"
+          />
+        </td>
+        <td class="invalid-feedback">Name cannot be blank</td>
+      </tr>
+      <tr class="form-group">
+        <td>Enter Address</td>
+        <td>
+          <textarea
+            formControlName="addr"
+            placeholder="Enter your address"
+            required
+            class="form-control form-control-sm"
+          ></textarea>
+        </td>
+        <td class="invalid-feedback">Address cannot be blank</td>
+      </tr>
+      <tr class="form-group">
+        <td>Select Gender</td>
+        <td>
+          <input
+            formControlName="gender"
+            type="radio"
+            required
+            class="form-check-input mr-4"
+            name="gender"
+            value="Male"
+          />&nbsp Male
+          <input
+            formControlName="gender"
+            type="radio"
+            required
+            class="form-check-input mr-4"
+            name="gender"
+            value="Female"
+          />&nbsp Female
+          <input
+            formControlName="gender"
+            type="radio"
+            required
+            class="form-check-input mr-4"
+            name="gender"
+            value="Female"
+          />&nbsp Other
+        </td>
+        <td class="invalid-feedback">Gender has to be selected</td>
+      </tr>
+      <tr class="form-group">
+        <td>Select City</td>
+        <td>
+          <select
+            formControlName="city"
+            class="form-control form-control-sm"
+            required
+          >
+            <option value="">Select</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+          </select>
+        </td>
+        <td class="invalid-feedback">Please select a city</td>
+      </tr>
+
+      <tr class="form-group">
+        <td>Select Passion</td>
+        <td>
+          <select
+            formControlName="passion"
+            class="form-control form-control-sm"
+            multiple
+            required
+          >
+            <option value="Reading">Reading</option>
+            <option value="Music">Music</option>
+            <option value="Trekking">Trekking</option>
+            <option value="Vlogging">Vlogging</option>
+            <option value="Sports">Sports</option>
+          </select>
+        </td>
+        <td class="invalid-feedback">Please select at least 1 passion</td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </td>
+        <td><button type="reset" class="btn btn-danger">Cancel</button></td>
+      </tr>
+    </table>
+  </form>
+</div>

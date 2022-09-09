@@ -1,0 +1,7 @@
+C:\STEM Training\CSharp NET\CSharpIntro\OOPSIntro\bin\Debug\OOPSIntro.exe.config
+C:\STEM Training\CSharp NET\CSharpIntro\OOPSIntro\bin\Debug\OOPSIntro.exe
+C:\STEM Training\CSharp NET\CSharpIntro\OOPSIntro\bin\Debug\OOPSIntro.pdb
+C:\STEM Training\CSharp NET\CSharpIntro\OOPSIntro\obj\Debug\OOPSIntro.csproj.AssemblyReference.cache
+C:\STEM Training\CSharp NET\CSharpIntro\OOPSIntro\obj\Debug\OOPSIntro.csproj.CoreCompileInputs.cache
+C:\STEM Training\CSharp NET\CSharpIntro\OOPSIntro\obj\Debug\OOPSIntro.exe
+C:\STEM Training\CSharp NET\CSharpIntro\OOPSIntro\obj\Debug\OOPSIntro.pdb
